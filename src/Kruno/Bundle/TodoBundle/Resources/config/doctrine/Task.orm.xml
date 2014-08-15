@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+    <entity repository-class="Kruno\Bundle\TodoBundle\Repository\TaskRepository"
+            name="Kruno\Bundle\TodoBundle\Entity\Task"
+            table="tasks">
+
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+
+        <field name="priority" type="integer" column="priority" nullable="false"/>
+        <field name="taskName" type="string" column="task_name" length="255" nullable="false"/>
+        <field name="deadline" type="datetime" column="deadline" nullable="false"/>
+        <field name="status" type="boolean" column="status" nullable="true"/>
+        <field name="dateCreated" type="datetime" column="dateCreated" nullable="false"/>
+
+        <!-- TODO many to one list -->
+
+    </entity>
+
+</doctrine-mapping>
