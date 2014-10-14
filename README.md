@@ -1,5 +1,6 @@
 Symfony Standard Edition
 ========================
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/KrunoKnego/Todo-App-Symfony2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Welcome to the Symfony Standard Edition - a fully-functional Symfony2
 application that you can use as the skeleton for your new applications.
